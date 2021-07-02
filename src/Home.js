@@ -10,7 +10,7 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container mt-3 p-5">
+        <div className="container mt-3 pt-5 px-5">
           <Row>
             <div className="col col-sm pr-1">
               <h2>About Us</h2>
@@ -25,8 +25,8 @@ class Home extends Component {
             </div>
           </Row>
         </div>
-
-        <div className="container container-hr p-5">
+        <hr />
+        <div className="container container-hr pt-3 pb-3 px-5">
           <Row>
             <div className="col col-4 d-none d-lg-block">
               <h2>Food</h2>
@@ -35,7 +35,6 @@ class Home extends Component {
                 of our cafe's creations. Each dish has a story to tell and provides people with the opportunity to learn about
                 the area the food is from.</p>
             </div>
-
             <div className="col pr-5">
               <h2>Current Menu</h2>
               <p className="lead">We serve a different menu each season. Currently serving our spring menu. 
@@ -50,8 +49,8 @@ class Home extends Component {
             </div>
           </Row>
         </div>
-
-        <div className="container container-hr p-5">
+        <hr />
+        <div className="container container-hr pt-3 px-5">
           <Row>
             <div className="col d-none d-lg-block">
               <img src={outdoor} width="600" height="400" className="img-fluid rounded" alt="Image of cafe outside" />

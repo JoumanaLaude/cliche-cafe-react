@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap'); */
 
-/* body {
-  background-color: #FFECE3;
-  color: #55433B; } */
-
-::-moz-selection {
-  background: #ffe2ad; }
-
-::selection {
-  background: #ffe2ad; }
-
 .container-hr {
   border-top: 1px solid #B0765E; }
 
@@ -22,12 +12,6 @@
   font-weight: 400;
   color: #55433B;
   padding: 15px; }
-
-.dropdown-item, .dropdown-menu {
-  background-color: #FFECE3;
-  font: 1.2rem "Libre Baskerville", serif;
-  font-weight: 400;
-  border: none; }
 
 .dropdown-item, i {
   color: #55433B; }
@@ -76,9 +60,6 @@ h3 {
   background-color: #ffd484cc;
   bottom: 40px;
   /* border: 1px solid #faf3f3e0; looks..pixelated when added? fix if can*/ }
-
-.dropdown-divider {
-  border-top: 1px solid #ffe2ad; }
 
 a {
   font-size: 1.2rem;
