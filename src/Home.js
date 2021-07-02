@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
+//import CarouselHero from './carousel/CarouselHero';
 import { Row } from 'reactstrap';
 import macarons from './assets/images/pages/bao-macarons.png';
 import pudding from './assets/images/pages/mango-pudding-jelly.jpg';
 import outdoor from './assets/images/pages/cafe-outside.jpg';
 
-
-// function Home() {
 class Home extends Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         <div className="container mt-3 pt-5 px-5">
           <Row>
-            <div className="col col-sm pr-1">
+            <div className="col col-sm pt-5 pr-1">
               <h2>About Us</h2>
               <p className="lead">Cliche Cafe is a cafe and lounge area where we provide people with a new experience for food,
                 work, and relaxation. Our cafe side includes a seasonal rotating menu and bubble tea bar where people can
@@ -21,7 +20,7 @@ class Home extends Component {
               </p>
             </div>
             <div className="col d-none d-lg-block my-3">
-              <img src={macarons} width="600" height="337" className="img-fluid rounded float-right" alt="Image of bao themed macarons" />
+              <img src={macarons} width="600" height="337" className="img-fluid rounded float-right pt-5" alt="Bao themed macarons" />
             </div>
           </Row>
         </div>
@@ -37,8 +36,8 @@ class Home extends Component {
             </div>
             <div className="col pr-5">
               <h2>Current Menu</h2>
-              <p className="lead">We serve a different menu each season. Currently serving our spring menu. 
-              <br /><a href="menus.html"><strong>View Full Menu</strong></a></p>
+              <p className="lead">We serve a different menu each season. Currently serving our spring menu.
+                <br /><a href="menus.html"><strong>View Full Menu</strong></a></p>
               <img src={pudding} className="img-fluid rounded" alt="Popular mango jelly pudding" />
             </div>
             <div className="col-4 d-none d-lg-block">
@@ -53,7 +52,7 @@ class Home extends Component {
         <div className="container container-hr pt-3 px-5">
           <Row>
             <div className="col d-none d-lg-block">
-              <img src={outdoor} width="600" height="400" className="img-fluid rounded" alt="Image of cafe outside" />
+              <img src={outdoor} width="600" height="400" className="img-fluid rounded" alt="The cafe outside" />
             </div>
             <div className="col col-sm">
               <h2>Lounge & Workspace</h2>
@@ -65,7 +64,7 @@ class Home extends Component {
             </div>
           </Row>
         </div>
-      </React.Fragment>
+      </>
 
     );
   }

@@ -3,6 +3,12 @@
 .container-hr {
   border-top: 1px solid #B0765E; }
 
+::-moz-selection {
+  background: #ffe2ad; }
+
+::selection {
+  background: #ffe2ad; }
+
 .navbar {
   background-color: #ffe2ad; }
 
@@ -59,7 +65,7 @@ h3 {
   border-radius: 100%;
   background-color: #ffd484cc;
   bottom: 40px;
-  /* border: 1px solid #faf3f3e0; looks..pixelated when added? fix if can*/ }
+  margin-left: 15px; }
 
 a {
   font-size: 1.2rem;

@@ -28,7 +28,7 @@ toggleModal() {
   render() {
     return (
       <React.Fragment>
-        <Navbar className="navbar navbar-expand-lg navbar-light" fixed="top">
+        <Navbar className="navbar navbar-expand-lg navbar-light py-3" fixed="top">
           <div className="container">
             <NavbarToggler onClick={this.toggleNav} />
             <Collapse isOpen={this.state.isNavOpen} navbar>

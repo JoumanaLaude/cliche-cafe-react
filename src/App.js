@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Home from './Home';
 import Header from './Header';
+import CarouselSlider from './carousel/CarouselSlider';
 import './App.css';
 import './assets/css/styles.css';
 
-function App() {
-  return (
-    <div className="main-styles">
+class App extends Component {
+  render() {
+    return (
+      <>
+      <CarouselSlider />
       <Header />
       <Home />
-    </div>
-  );
+      </>
+    );
+  }
 }
 
 export default App;
