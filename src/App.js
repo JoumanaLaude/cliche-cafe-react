@@ -3,7 +3,7 @@ import Home from './Home';
 import Header from './Header';
 import CarouselSlider from './carousel/CarouselSlider';
 import './App.css';
-import './assets/css/styles.css';
+import './css/styles.css';
 
 class App extends Component {
   render() {
