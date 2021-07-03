@@ -10,7 +10,11 @@
   background: #ffe2ad; }
 
 .navbar {
-  background-color: #ffe2ad; }
+  background-color: #ffe2ad;
+  border-bottom: 1px solid #B0765E; }
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center; }
 
 .navbar-light .navbar-nav .nav-link {
   font-family: "Libre Baskerville", serif;
@@ -19,11 +23,7 @@
   color: #55433B;
   padding: 15px; }
 
-.dropdown-item, i {
-  color: #55433B; }
-
 h1 {
-  /* carousel headers */
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
   color: #ffe2ad;
@@ -44,7 +44,7 @@ h2 {
   color: #55433B;
   text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5); }
 
-.carousel-item {
+/* .carousel-item {
   height: 100vh;
   min-height: 350px;
   background: no-repeat center center scroll;
@@ -55,8 +55,7 @@ h2 {
 
 .carousel-caption {
   top: 30%;
-  bottom: auto;
-  /* need for caption box height */ }
+  bottom: auto; }
 
 .carousel-indicators li {
   width: 50px;
@@ -64,7 +63,7 @@ h2 {
   border-radius: 100%;
   background-color: #ffd484cc;
   bottom: 40px;
-  margin-left: 15px; }
+  margin-left: 15px; } */
 
 a {
   font-size: 1.2rem;
@@ -89,9 +88,6 @@ table {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   background-color: #55433B; }
-
-.nav-link:focus, .nav-link:hover {
-  background-color: #ffe2ad; }
 
 .table tr {
   border-top: 1px solid #B0765E; }

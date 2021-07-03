@@ -6,6 +6,7 @@ import { Row } from 'reactstrap';
 import macarons from './assets/images/pages/bao-macarons.png';
 import pudding from './assets/images/pages/mango-pudding-jelly.jpg';
 import outdoor from './assets/images/pages/cafe-outside.jpg';
+import Footer from './Footer';
 
 class Home extends Component {
   render() {
@@ -14,7 +15,7 @@ class Home extends Component {
       <Slider images={Images} />
         <div className="container mt-3 pt-5 px-5">
           <Row>
-            <div className="col col-sm pt-5 pr-1">
+            <div className="col col-sm pr-1">
               <h2>About Us</h2>
               <p className="lead">Cliche Cafe is a cafe and lounge area where we provide people with a new experience for food,
                 work, and relaxation. Our cafe side includes a seasonal rotating menu and bubble tea bar where people can
@@ -27,8 +28,9 @@ class Home extends Component {
             </div>
           </Row>
         </div>
+        
         <hr />
-        <div className="container container-hr pt-3 pb-3 px-5">
+        <div className="container pt-3 pb-3 px-5">
           <Row>
             <div className="col col-4 d-none d-lg-block">
               <h2>Food</h2>
@@ -51,8 +53,9 @@ class Home extends Component {
             </div>
           </Row>
         </div>
+        
         <hr />
-        <div className="container container-hr pt-3 px-5">
+        <div className="container py-3 px-5">
           <Row>
             <div className="col d-none d-lg-block">
               <img src={outdoor} width="600" height="400" className="img-fluid rounded" alt="The cafe outside" />
@@ -67,6 +70,11 @@ class Home extends Component {
             </div>
           </Row>
         </div>
+
+        <div className="site-footer py-3">
+        <Footer></Footer>
+        </div>
+        
       </>
 
     );

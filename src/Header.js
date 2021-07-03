@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavLink, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 //import { Link } from 'react-router-dom';
 
 class Header extends Component {
@@ -28,24 +30,16 @@ toggleModal() {
   render() {
     return (
       <React.Fragment>
-        <Navbar className="navbar navbar-expand-lg navbar-light py-3" fixed="top">
+        <Navbar className="navbar navbar-expand-lg navbar-light py-1" fixed="top">
           <div className="container">
             <NavbarToggler onClick={this.toggleNav} />
             <Collapse isOpen={this.state.isNavOpen} navbar>
-              <Nav navbar>
-              <NavItem><i className="fa fa-heart fa-lg"></i></NavItem>
-                <NavItem>
-                  <NavLink className="nav-link" to="/home">Home</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink className="nav-link" to="/about">About</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink className="nav-link" to="/menus">Menus</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink className="nav-link" to="/reserve">Reserve</NavLink>
-                </NavItem>
+            <Nav navbar>
+                <NavItem><NavLink className="nav-link" to="/home"><FontAwesomeIcon icon={faHeart} /></NavLink></NavItem>
+                <NavItem><NavLink className="nav-link" to="/home">Home</NavLink></NavItem>
+                <NavItem><NavLink className="nav-link" to="/about">About</NavLink></NavItem>
+                <NavItem><NavLink className="nav-link" to="/menus">Menus</NavLink></NavItem>
+                <NavItem><NavLink className="nav-link" to="/reserve">Reserve</NavLink></NavItem>
               </Nav>
             </Collapse>
           </div>
