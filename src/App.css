@@ -29,18 +29,17 @@ h1 {
   color: #ffe2ad;
   text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.438); }
 
-h2 {
-  /* section headers */
+h3 {
   font-family: "Libre Baskerville", serif;
-  font-size: 2.4rem;
+  font-size: 5rem;
   font-weight: 300;
   color: #55433B;
-  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5); }
+  text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.5); }
 
-h3 {
-  /* menu items */
+h2 {
+  /* switched from menu items in first project */
   font-family: "Libre Baskerville", serif;
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 300;
   color: #55433B;
   text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5); }

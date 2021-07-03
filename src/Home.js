@@ -1,5 +1,7 @@
-import React, { Component, useState } from 'react';
-//import CarouselHero from './carousel/CarouselHero';
+import React, { Component } from 'react';
+//import CarouselHero from './CarouselHero';
+import Slider from "./components/Slider"
+import Images from "./images"
 import { Row } from 'reactstrap';
 import macarons from './assets/images/pages/bao-macarons.png';
 import pudding from './assets/images/pages/mango-pudding-jelly.jpg';
@@ -9,6 +11,7 @@ class Home extends Component {
   render() {
     return (
       <>
+      <Slider images={Images} />
         <div className="container mt-3 pt-5 px-5">
           <Row>
             <div className="col col-sm pt-5 pr-1">
@@ -69,10 +72,6 @@ class Home extends Component {
     );
   }
 }
-
-
-
-
 
 
 export default Home;
