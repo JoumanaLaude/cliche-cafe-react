@@ -77,7 +77,8 @@ a:hover, a:focus, .fa:hover,
   text-decoration: none; }
 
 .site-footer {
-  background-color: #ffe2ad; }
+  background-color: #ffe2ad;
+  padding: 20px 0; }
 
 @media (min-width: 1200px) {
   .container {

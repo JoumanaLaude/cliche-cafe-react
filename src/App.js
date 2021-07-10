@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Home from './Home';
-import Header from './Header';
+import Main from './components/Main';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import './css/styles.css';
 
@@ -8,8 +8,11 @@ class App extends Component {
   render() {
     return (
       <>
-      <Header />
-      <Home />
+        <BrowserRouter>
+          <div>
+            <Main />
+          </div>
+        </BrowserRouter>
       </>
     );
   }

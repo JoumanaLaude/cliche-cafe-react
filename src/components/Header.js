@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavLink, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+import { Nav, Navbar, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
-//import { Link } from 'react-router-dom';
 
 class Header extends Component {
   constructor(props) {
