@@ -6,6 +6,10 @@ import macarons from '../assets/images/pages/bao-macarons.png';
 import pudding from '../assets/images/pages/mango-pudding-jelly.jpg';
 import outdoor from '../assets/images/pages/cafe-outside.jpg';
 
+import TitleText from './TitleText';
+
+import { HomePageContent } from '../constants';
+
 function Home() {
   return (
     <>
@@ -13,12 +17,13 @@ function Home() {
       <div className="container mt-3 pt-5 px-5">
         <Row>
           <div className="col col-sm pr-1">
-            <h2>About Us</h2>
+            <TitleText titleText={HomePageContent.aboutUs.titleText} bodyText={HomePageContent.aboutUs.bodyText} />
+            {/* <h2>About Us</h2>
             <p className="lead">Cliche Cafe is a cafe and lounge area where we provide people with a new experience for food,
               work, and relaxation. Our cafe side includes a seasonal rotating menu and bubble tea bar where people can
               enjoy the combination of boba flavors & alcohol. The cafe provides indoor and outdoor seating where people can
               do work or just kick back and take a breather. <a href="about.html"><strong>Learn more...</strong></a>
-            </p>
+            </p> */}
           </div>
           <div className="col d-none d-lg-block my-3">
             <img src={macarons} width="600" height="337" className="img-fluid rounded float-right pt-5" alt="Bao themed macarons" />
