@@ -125,3 +125,9 @@ input[type="color"]:focus,
   display: inline-block;
   text-decoration: none;
   transition: transform 80ms ease-in; }
+
+  @media screen and (max-width: 700px) {
+    .lead {
+      font-size: 1.1rem;
+    }
+  }
