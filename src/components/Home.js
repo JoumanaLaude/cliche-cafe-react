@@ -5,7 +5,6 @@ import { Row } from 'reactstrap';
 import macarons from '../assets/images/pages/bao-macarons.png';
 import pudding from '../assets/images/pages/mango-pudding-jelly.jpg';
 import outdoor from '../assets/images/pages/cafe-outside.jpg';
-
 import TitleText from './TitleText';
 import { HomePageContent } from '../constants/homeConst';
 
