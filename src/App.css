@@ -29,13 +29,6 @@ h1 {
   color: #ffe2ad;
   text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.438); }
 
-h3 {
-  font-family: "Libre Baskerville", serif;
-  font-size: 5rem;
-  font-weight: 300;
-  color: #55433B;
-  text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.5); }
-
 h2 {
   /* switched from menu items in first project */
   font-family: "Libre Baskerville", serif;
@@ -44,26 +37,12 @@ h2 {
   color: #55433B;
   text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5); }
 
-/* .carousel-item {
-  height: 100vh;
-  min-height: 350px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-.carousel-caption {
-  top: 30%;
-  bottom: auto; }
-
-.carousel-indicators li {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: #ffd484cc;
-  bottom: 40px;
-  margin-left: 15px; } */
+h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 5rem;
+  font-weight: 300;
+  color: #55433B;
+  text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.5); }
 
 a {
   font-size: 1.2rem;

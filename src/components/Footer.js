@@ -9,10 +9,10 @@ function Footer() {
          <div className="container">
             <div className="row">
                <div className="col col-8 text-center">
-                  <FontAwesomeIcon icon={faStar} size="3x" className="pt-4 mx-3" />
-                  <FontAwesomeIcon icon={faStar} size="3x" className="pt-4 mx-3" />
-                  <FontAwesomeIcon icon={faStar} size="3x" className="pt-4 mx-3" />
-                  <FontAwesomeIcon icon={faStar} size="3x" className="pt-4 mx-3" />
+                  <FontAwesomeIcon icon={faStar} size="2x" className="pt-1 mx-3" />
+                  <FontAwesomeIcon icon={faStar} size="2x" className="pt-1 mx-3" />
+                  <FontAwesomeIcon icon={faStar} size="2x" className="pt-1 mx-3" />
+                  <FontAwesomeIcon icon={faStar} size="2x" className="pt-1 mx-3" />
                </div>
                <div className="col text-right">
                   Hours & Contact Us

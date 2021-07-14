@@ -8,9 +8,7 @@ import Reserve from './Reserve';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
-   constructor(props) {
-      super(props);
-   }
+
    render() {
       const HomePage = () => {
          return (

@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import useSlider from '../hooks/useSlider'
+import '../css/slider.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
