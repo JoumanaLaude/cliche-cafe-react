@@ -14,11 +14,11 @@ function Home() {
       <Slider images={Images} />
       <div className="container mt-3 pt-5 px-5">
         <Row>
-          <Col lg={6}>
+          <Col>
             <TitleText titleText={HomePageContent.introParagraph.titleText} bodyText={HomePageContent.introParagraph.bodyText} />
             <p className="lead"><a href="about.html"><strong>Learn more...</strong></a></p>
           </Col>
-          <Col>
+          <Col lg={5}>
             <img src={macarons} width="600" height="300" className="img-fluid rounded float-right" alt="Bao themed macarons" />
           </Col>
         </Row>
@@ -33,7 +33,7 @@ function Home() {
           <Col>
             <TitleText titleText={HomePageContent.menuParagraph.titleText} bodyText={HomePageContent.menuParagraph.bodyText} />
             <p className="text-left"><a href="menus.html" className="lead"><strong>View Full Menu</strong></a></p>
-            <img src={pudding} width="300" height="220" className="img-fluid rounded" alt="Popular mango jelly pudding" />
+            <img src={pudding} width="300" height="220" className="img-fluid rounded d-none d-lg-block" alt="Popular mango jelly pudding" />
           </Col>
           <Col lg={4} className="d-none d-lg-block">
             <TitleText titleText={HomePageContent.drinksParagraph.titleText} bodyText={HomePageContent.drinksParagraph.bodyText} />
@@ -44,13 +44,13 @@ function Home() {
       <hr />
       <div className="container py-3 px-5">
         <Row>
-          <div className="col d-none d-lg-block">
+          <Col lg={5} className="d-none d-lg-block">
             <img src={outdoor} width="600" height="300" className="img-fluid rounded" alt="The cafe outside" />
-          </div>
-          <div className="col col-sm">
+          </Col>
+          <Col>
             <TitleText titleText={HomePageContent.workspaceParagraph.titleText} bodyText={HomePageContent.workspaceParagraph.bodyText} />
             <a href="reserve.html" className="text-right lead"><strong>Reserve Workspace</strong></a>
-          </div>
+          </Col>
         </Row>
       </div>
 
