@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "./Slider"
-import Images from "../images"
+import SliderInfo from "../constants/sliderInfo"
 import { Col, Row } from 'reactstrap';
 import macarons from '../assets/images/pages/bao-macarons.png';
 import pudding from '../assets/images/pages/mango-pudding-jelly.jpg';
@@ -11,7 +11,7 @@ import { HomePageContent } from '../constants/homeConst';
 function Home() {
   return (
     <>
-      <Slider images={Images} />
+      <Slider images={SliderInfo}/>
       <div className="container mt-3 pt-5 px-5">
         <Row>
           <Col>

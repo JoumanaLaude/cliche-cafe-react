@@ -52,19 +52,24 @@ body {
  
  .feature__btn {
    font-family: "Libre Baskerville", serif;
-   background: #ffd484cc;
+   background: #ffe2ad;
    border: none;
    color: #444;
    outline: none;
    font-weight: 400;
    padding: 1rem;
    cursor: pointer;
+   border-radius: 8px;
+ }
+
+ .feature__btn:hover {
+  background: #FFECE3;
  }
  
  .slider__btn-left:hover,
  .slider__btn-right:hover {
    transform: scale(0.9);
-   color: #ffd484cc;
+   color: #ffe2ad;
  }
  
  @keyframes fadeIn {

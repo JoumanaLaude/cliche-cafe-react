@@ -1,8 +1,8 @@
-import slide1 from './assets/images/slider/boba.jpg';
-import slide2 from './assets/images/slider/bingsoo.jpg';
-import slide3 from './assets/images/slider/latte.jpg';
+import slide1 from '../assets/images/slider/boba.jpg';
+import slide2 from '../assets/images/slider/bingsoo.jpg';
+import slide3 from '../assets/images/slider/latte.jpg';
 
-const items = [
+const SliderInfo = [
    {
     src: slide1,
     text: 'Cafe, bar, and lounge.'
@@ -17,4 +17,4 @@ const items = [
    }
 ] 
 
-export default items;
+export default SliderInfo;
