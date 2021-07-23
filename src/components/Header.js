@@ -38,7 +38,7 @@ toggleModal() {
                 <NavItem><NavLink className="nav-link" to="/home"><FontAwesomeIcon icon={faHeart} /></NavLink></NavItem>
                 <NavItem><NavLink className="nav-link" to="/home">Home</NavLink></NavItem>
                 <NavItem><NavLink className="nav-link" to="/about">About</NavLink></NavItem>
-                <NavItem><NavLink className="nav-link" to="/menus">Menus</NavLink></NavItem>
+                <NavItem><NavLink className="nav-link" to="/menu">Menu</NavLink></NavItem>
                 <NavItem><NavLink className="nav-link" to="/reserve">Reserve</NavLink></NavItem>
               </Nav>
             </Collapse>
