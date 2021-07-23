@@ -1,18 +1,22 @@
 import React from 'react';
-//import { Col, Row } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import {
+   faYelp,
+   faInstagram,
+   faYoutube,
+   faTwitter
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
    return (
       <footer className="site-footer">
          <div className="container">
             <div className="row">
-               <div className="col col-8 text-center">
-                  <FontAwesomeIcon icon={faStar} size="2x" className="pt-1 mx-3" />
-                  <FontAwesomeIcon icon={faStar} size="2x" className="pt-1 mx-3" />
-                  <FontAwesomeIcon icon={faStar} size="2x" className="pt-1 mx-3" />
-                  <FontAwesomeIcon icon={faStar} size="2x" className="pt-1 mx-3" />
+               <div className="col-6 text-center mt-2">
+                  <a href="http://yelp.com/" aria-label="Yelp" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faYelp} className="fa-2x fa-fw icon-space" /></a>
+                  <a href="http://instagram.com/" aria-label="Instagram" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="fa-2x fa-fw icon-space" /></a>
+                  <a href="http://youtube.com/" aria-label="Youtube" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faYoutube} className="fa-2x fa-fw icon-space" /></a>
+                  <a href="http://twitter.com/" aria-label="Twitter" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} className="fa-2x fa-fw icon-space" /></a>
                </div>
                <div className="col text-right">
                   Hours & Contact Us

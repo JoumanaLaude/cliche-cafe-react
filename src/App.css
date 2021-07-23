@@ -100,3 +100,23 @@ table {
       font-weight: 400;
     }
   }
+
+  .order-button {
+    font-family: "Libre Baskerville", serif;
+    background: #B0765E;
+    border: none;
+    color: #FFECE3;
+    outline: none;
+    font-weight: 400;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+ 
+  .order-button:hover {
+   background: #55433B;
+  }
+
+.icon-space {
+    padding-right: 20px;
+  }

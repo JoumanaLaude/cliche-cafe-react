@@ -9,7 +9,7 @@ import { Col, Row } from 'reactstrap';
 const FoodMenu = () => {
    return (
       <>
-         <div className="container mt-5 pt-5 px-5">
+         <div className="container mt-5">
             <h3 className="text-center">Food</h3>
             <Row>
                <Col lg={6}>
