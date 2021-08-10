@@ -5,6 +5,9 @@ import './App.css';
 import './css/styles.css';
 
 class App extends Component {
+  componentDidMount(){
+    document.title = "Cliche Cafe"
+  }
   render() {
     return (
       <>
