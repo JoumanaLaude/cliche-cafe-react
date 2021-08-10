@@ -8,8 +8,7 @@ import { Col, Row } from 'reactstrap';
 
 const DrinksMenu = () => {
    return (
-      <>
-         <div className="container mt-5 pt-5 px-5">
+         <div className="container mt-5">
             <h3 className="text-center">Drinks</h3>
             <Row>
                <Col lg={6}>
@@ -46,7 +45,6 @@ const DrinksMenu = () => {
                </Col>
             </Row>
          </div>
-      </>
    )
 }
 

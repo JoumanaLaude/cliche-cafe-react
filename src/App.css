@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap'); */
 
-::-moz-selection {
-  background: #ffe2ad; }
-
 ::selection {
   background: #ffe2ad; }
 
 .navbar {
-  background-color: #ffe2ad;
-  border-bottom: 1px solid #B0765E; }
+  background-color: #ffe2ad;}
 
 .navbar-expand-lg .navbar-collapse {
   justify-content: center; }
@@ -18,7 +14,7 @@
   font-size: 1.5rem;
   font-weight: 400;
   color: #55433B;
-  padding: 15px; }
+  padding: 18px;}
 
 h1 {
   font-family: "Libre Baskerville", serif;
@@ -57,7 +53,8 @@ a:hover, a:focus, .fa:hover,
 
 .site-footer {
   background-color: #ffe2ad;
-  padding: 20px 0; }
+  padding: 20px 0; 
+  margin-top: 50px; }
 
 @media (min-width: 1200px) {
   .container {

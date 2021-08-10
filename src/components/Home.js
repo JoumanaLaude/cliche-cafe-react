@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
       <Slider images={SliderInfo}/>
-      <div className="container mt-3 pt-3 px-5">
+      <div className="container pt-4 px-5">
         <Row>
           <Col>
             <TitleText titleText={HomePageContent.introParagraph.titleText} bodyText={HomePageContent.introParagraph.bodyText} />
@@ -42,7 +42,7 @@ function Home() {
       </div>
 
       <hr />
-      <div className="container py-3 px-5">
+      <div className="container px-5">
         <Row>
           <Col lg={5} className="d-none d-lg-block">
             <img src={outdoor} width="600" height="300" className="img-fluid rounded" alt="The cafe outside" />

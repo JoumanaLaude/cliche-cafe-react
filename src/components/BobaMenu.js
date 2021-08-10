@@ -9,7 +9,7 @@ import { Col, Row } from 'reactstrap';
 const BobaMenu = () => {
    return (
       <>
-         <div className="container my-5 pt-5 px-5">
+         <div className="container mt-5">
             <h3 className="text-center">Bubble Tea (Alcoholic)</h3>
             <Row>
                <Col lg={6}>

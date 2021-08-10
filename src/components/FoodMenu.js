@@ -8,7 +8,6 @@ import { Col, Row } from 'reactstrap';
 
 const FoodMenu = () => {
    return (
-      <>
          <div className="container mt-5">
             <h3 className="text-center">Food</h3>
             <Row>
@@ -46,7 +45,6 @@ const FoodMenu = () => {
             </Col>
             </Row>
          </div>
-      </>
    )
 }
 
