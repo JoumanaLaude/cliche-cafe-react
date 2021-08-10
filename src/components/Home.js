@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
       <Slider images={SliderInfo}/>
-      <div className="container mt-3 pt-5 px-5">
+      <div className="container mt-3 pt-3 px-5">
         <Row>
           <Col>
             <TitleText titleText={HomePageContent.introParagraph.titleText} bodyText={HomePageContent.introParagraph.bodyText} />

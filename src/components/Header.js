@@ -1,52 +1,28 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Nav, Navbar, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
-class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-        isNavOpen: false
-    };
+const Header = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    this.toggleNav = this.toggleNav.bind(this);
-    this.toggleModal = this.toggleModal.bind(this);
-}
-
-toggleNav() {
-    this.setState({
-        isNavOpen: !this.state.isNavOpen
-    });
-}
-
-toggleModal() {
-    this.setState({
-        isModalOpen: !this.state.isModalOpen
-    });
-}
-
-  render() {
     return (
-      <React.Fragment>
-        <Navbar className="navbar navbar-expand-lg navbar-light py-1" fixed="top">
+        <Navbar isOpen={isOpen} className="navbar navbar-expand-lg navbar-light py-1" fixedTop>
           <div className="container">
-            <NavbarToggler onClick={this.toggleNav} />
-            <Collapse isOpen={this.state.isNavOpen} navbar>
+          <NavbarToggler onClick={() => setIsOpen(isOpen ? false : "isOpen")} />
+          <Collapse isOpen={isOpen} navbar>
             <Nav navbar>
-                <NavItem><NavLink className="nav-link" to="/home"><FontAwesomeIcon icon={faHeart} /></NavLink></NavItem>
-                <NavItem><NavLink className="nav-link" to="/home">Home</NavLink></NavItem>
-                <NavItem><NavLink className="nav-link" to="/about">About</NavLink></NavItem>
-                <NavItem><NavLink className="nav-link" to="/menu">Menu</NavLink></NavItem>
-                <NavItem><NavLink className="nav-link" to="/reserve">Reserve</NavLink></NavItem>
+                <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/home"><FontAwesomeIcon icon={faHeart} /></NavLink></NavItem>
+                <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/home">Home</NavLink></NavItem>
+                <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/about">About</NavLink></NavItem>
+                <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/menu">Menu</NavLink></NavItem>
+                <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/reserve">Reserve</NavLink></NavItem>
               </Nav>
             </Collapse>
           </div>
         </Navbar>
-      </React.Fragment>
     );
   }
-}
 
 export default Header;

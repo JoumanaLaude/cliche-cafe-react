@@ -9,7 +9,7 @@ class About extends Component {
    render() {
       return (
          <>
-            <div className="container mt-5 pt-5 px-5">
+            <div className="container mt-5 pt-3 px-5">
                <Row>
                   <Col lg={6} pr={1}>
                      <TitleText titleText={AboutUsContent.aboutUs.titleText} bodyText={AboutUsContent.aboutUs.bodyText} />
