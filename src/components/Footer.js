@@ -4,8 +4,8 @@ import {
    faYelp,
    faInstagram,
    faYoutube,
-   faTwitter,
-   faGithub
+   faTwitter
+   // faGithub
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
