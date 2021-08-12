@@ -50,22 +50,24 @@ body {
    transition: transform 0.15s ease-in-out;
  }
  
- .feature__btn {
-   font-family: "Libre Baskerville", serif;
-   background: #ffe2ad;
-   border: none;
-   color: #55433B;
-   outline: none;
-   font-weight: 400;
-   padding: 1rem;
-   cursor: pointer;
-   border-radius: 8px;
- }
+ .slider-button {
+  font-family: "Libre Baskerville", serif;
+  background: #ffe2ad;
+  border: none;
+  color: #55433B;
+  outline: none;
+  font-weight: 400;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
 
- .feature__btn:hover {
+.slider-button:hover {
   background: #FFECE3;
- }
- 
+  color: #55433B;
+}
+
+
  .slider__btn-left:hover,
  .slider__btn-right:hover {
    transform: scale(0.9);

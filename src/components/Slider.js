@@ -3,6 +3,8 @@ import useSlider from '../hooks/useSlider'
 import '../css/slider.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom';
+import { Button } from 'reactstrap';
 
 const Slider = ({images}) => {
   const slideImage = useRef(null)
@@ -18,7 +20,7 @@ const Slider = ({images}) => {
              <div className="slider--feature">
                 <h1 className="feature--title">Cliche Cafe</h1>
                 <p ref={slideText} className="feature--text"></p>
-                <button className="feature__btn">Learn more</button>
+                <NavLink to="/about"><Button className="slider-button">Learn more</Button></NavLink>
               </div>
               <button onClick={goToNextSlide} className="slider__btn-right">
               <FontAwesomeIcon icon={faArrowRight} />

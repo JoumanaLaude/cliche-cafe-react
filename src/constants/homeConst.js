@@ -7,15 +7,15 @@ export const HomePageContent = {
       do work or just kick back and take a breather.`
    },
    foodParagraph: {
-      titleText: "Food",
-      bodyText: `Our food menu consists of mostly small bites and desserts inspired by dishes from Asian
+      titleText: "Cafe Food & Drink",
+      bodyText: `Our menu consists of small bites, desserts, and drinks inspired from Asian
       countries. We research and select special foods that fit with each season, and select those as the ingredients
-      of our cafe's creations. Each dish has a story to tell and provides people with the opportunity to learn about
+      of our cafe's creations. Each menu item has a story to tell and provides people with the opportunity to learn about
       the area the food is from.`
    },
    menuParagraph: {
-      titleText: "Current Menu",
-      bodyText: `We serve a different menu each season. Currently serving our spring menu.`
+      titleText: "Seasonal Menu",
+      bodyText: `We serve a different menu each season. We're currently serving our spring season menu.`
    },
    drinksParagraph: {
       titleText: "Drinks",

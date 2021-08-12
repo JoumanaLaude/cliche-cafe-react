@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap'); */
 
+::-moz-selection {
+  background: #ffe2ad; }
 ::selection {
   background: #ffe2ad; }
 
@@ -11,10 +13,14 @@
 
 .navbar-light .navbar-nav .nav-link {
   font-family: "Libre Baskerville", serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #55433B;
-  padding: 18px;}
+  padding: 0px 15px;}
+
+.nav-link-logo {
+  padding: 0!important;
+  }
 
 h1 {
   font-family: "Libre Baskerville", serif;
@@ -78,41 +84,21 @@ table {
   html {
     scroll-behavior: smooth; } }
 
-.back-to-top {
-  /* position: fixed; */
-  top: 100vh;
-  pointer-events: none; }
+.order-button {
+  font-family: "Libre Baskerville", serif;
+  background: #B0765E;
+  border: none;
+  color: #FFECE3;
+  outline: none;
+  font-weight: 400;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
 
-.back-to-top-link {
-  /* position: fixed; */
-  pointer-events: all;
-  top: calc(100vh - 15rem);
-  display: inline-block;
-  text-decoration: none;
-  transition: transform 80ms ease-in; }
-
-  @media screen and (max-width: 700px) {
-    .lead {
-      font-size: 1.1rem;
-      font-weight: 400;
-    }
-  }
-
-  .order-button {
-    font-family: "Libre Baskerville", serif;
-    background: #B0765E;
-    border: none;
-    color: #FFECE3;
-    outline: none;
-    font-weight: 400;
-    padding: 1rem;
-    cursor: pointer;
-    border-radius: 8px;
-  }
- 
-  .order-button:hover {
-   background: #55433B;
-  }
+.order-button:hover {
+  background: #55433B;
+}
 
 .icon-space {
     padding-right: 20px;
