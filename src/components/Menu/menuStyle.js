@@ -9,6 +9,6 @@ export const ItemName = styled.h4`
 
 export const ItemBox = styled.div`
     margin: auto;
-    width: 80%;
+    width: 90%;
     background: #fff1e3;
 `

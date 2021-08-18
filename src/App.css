@@ -97,5 +97,15 @@ table {
 }
 
 .icon-space {
-    padding-right: 20px;
-  }
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 989px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.4rem;
+    padding: 8px;
+    text-align: center;
+    }
+}
+
