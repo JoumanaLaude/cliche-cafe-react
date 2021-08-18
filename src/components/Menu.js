@@ -15,7 +15,7 @@ function MenuPage() {
                <p><h2>Menu</h2>Cliche Cafe is currently serving our spring season menu.</p>
                <p>We are currently accepting pickup orders for food and drink only. Bubble tea orders can only be taken at the cafe bar.</p>
                <Button className="order-button" onClick={toggle}>Order Pickup</Button>
-               <Modal isOpen={modal} toggle={toggle}>
+               <Modal isOpen={modal} toggle={toggle} returnFocusAfterClose={false}>
                   <ModalHeader charCode="Close" toggle={toggle}>Order for Pickup</ModalHeader>
                   <ModalBody>
                      <Row>

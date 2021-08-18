@@ -100,6 +100,17 @@ table {
   padding-right: 20px;
 }
 
+.footer-button {
+  font-family: "Libre Baskerville", serif;
+  background: #B0765E;
+  border: none;
+  color: #FFECE3;
+}
+
+.btn-secondary:hover {
+  background: #55433B;
+}
+
 @media screen and (max-width: 989px) {
   .navbar-light .navbar-nav .nav-link {
     font-family: "Libre Baskerville", serif;
