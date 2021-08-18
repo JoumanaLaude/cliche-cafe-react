@@ -3,7 +3,7 @@ import { Container, Nav, Navbar, NavbarToggler, NavbarBrand, Collapse, NavItem }
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/images/cafe-logo.png'
 
-const Header = (props) => {
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -12,7 +12,7 @@ const Header = (props) => {
         <NavbarBrand><NavLink onClick={() => setIsOpen(false)} className="nav-link-logo" to="/home"><img src={logo} alt="logo" /></NavLink></NavbarBrand>
         <NavbarToggler onClick={() => setIsOpen(isOpen ? false : "isOpen")} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav navbar className="justify-content-end" style={{ width: "100%" }}>
+          <Nav navbar className="justify-content-end mobile-link" style={{ width: "100%" }}>
             <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/home">Home</NavLink></NavItem>
             <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/about">About</NavLink></NavItem>
             <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/menu">Menu</NavLink></NavItem>

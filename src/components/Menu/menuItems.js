@@ -34,7 +34,7 @@ export const cafeMenu = [
         origin: "Inspired by Vietnam's popular avocado smoothie."
     },
     {
-        name: "Lychee Panna Cotta Bowl",
+        name: "Lychee Panna Cotta",
         img: lycheepann,
         price: "$7",
         desc: "Contains panna cotta with fresh lychee and dragonfruit. A sweet cold soup perfect for warm days.",
@@ -48,6 +48,7 @@ export const cafeMenu = [
         origin: "Traditional coffee called 'ca phe trung' in Vietnam."
     },
     {
+        name: "Match Calamansi-ade",
         img: calamansiade,
         price: "$4",
         desc: "Freshly squeezed calamansi juice and matcha mixed together and contains many health benefits such as immunity boost and collagen production.",

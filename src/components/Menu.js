@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, Row, Col, Container, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import Products from './/Menu/MenuItemComponent';
 import { cafeMenu } from './Menu/menuItems';
+import { CartButton } from './../components/Menu/menuStyle'
 
 function MenuPage() {
    const [modal, setModal] = useState(false);
@@ -14,15 +15,14 @@ function MenuPage() {
                <p><h2>Menu</h2>Cliche Cafe is currently serving our spring season menu.</p>
                <p>We are currently accepting pickup orders for food and drink only. Bubble tea orders can only be taken at the cafe bar.</p>
                <Button className="order-button" onClick={toggle}>Order Pickup</Button>
-
-               {/* <Modal isOpen={modal} toggle={toggle}>
+               <Modal isOpen={modal} toggle={toggle}>
                   <ModalHeader charCode="Close" toggle={toggle}>Order for Pickup</ModalHeader>
                   <ModalBody>
                      <Row>
-                        {menuItems.map((menuItem, index) => (
+                        {cafeMenu.map((cafeMenu, index) => (
                            <div className="container" key={index}>
-                              <span>{menuItem.name} {menuItem.price}</span>
-                              <Button> + </Button>
+                              <span><img width="100" className="img-fluid p-2" src={cafeMenu.img} alt={cafeMenu.name} /> {cafeMenu.name} {cafeMenu.price}</span>{' '}
+                              <CartButton> + </CartButton>^_^<CartButton> - </CartButton>
                            </div>
                         ))}
                      </Row>
@@ -30,9 +30,9 @@ function MenuPage() {
                   <ModalFooter>
                      <p>Items:</p>
                      <p>Total:</p>
+                     <Button className="order-button" onClick={toggle}>Submit Order for Pickup</Button>
                   </ModalFooter>
-                  <Button className="order-button" onClick={toggle}>Submit Order for Pickup</Button>
-               </Modal> */}
+               </Modal>
             </Col>
 
             <Products data={cafeMenu} />
