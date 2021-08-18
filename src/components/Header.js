@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Nav, Navbar, NavbarToggler, NavbarBrand, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/images/cafe-logo.png'
+import logo from '../assets/images/cliche-cafe-logo.png'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
