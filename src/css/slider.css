@@ -11,18 +11,18 @@ body {
    width: 100%;
  }
  
- .slider--content {
+ .slider-content {
    display: flex;
    justify-content: space-between;
    align-items: center;
    height: 100vh;
  }
  
- .slider--feature {
+ .slider-feature {
    text-align: center;
  }
  
- .feature--title {
+ .feature-title {
    font-family: "Libre Baskerville", serif;
    font-size: 5rem;
    font-weight: 700;
@@ -30,7 +30,7 @@ body {
    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.438);
  }
  
- .feature--text {
+ .feature-text {
    font-family: "Libre Baskerville", serif;
    font-size: 2.4rem;
    font-weight: 300;
@@ -38,8 +38,8 @@ body {
    margin: 1rem 0;
  }
  
- .slider__btn-right,
- .slider__btn-left {
+ .slider-button-right,
+ .slider-button-left {
    background: transparent;
    border: none;
    outline: none;
@@ -67,8 +67,8 @@ body {
 }
 
 
- .slider__btn-left:hover,
- .slider__btn-right:hover {
+ .slider-button-left:hover,
+ .slider-button-right:hover {
    transform: scale(0.9);
    color: #ffe2ad;
  }

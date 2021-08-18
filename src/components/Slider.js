@@ -13,16 +13,16 @@ const Slider = ({images}) => {
 
     return (
           <div className="slider" ref={slideImage}>
-            <div className="slider--content">
-              <button onClick={goToPreviousSlide} className="slider__btn-left">
+            <div className="slider-content">
+              <button onClick={goToPreviousSlide} className="slider-button-left">
               <FontAwesomeIcon icon={faArrowLeft} />
               </button>
-             <div className="slider--feature">
-                <h1 className="feature--title">Cliche Cafe</h1>
-                <p ref={slideText} className="feature--text"></p>
+             <div className="slider-feature">
+                <h1 className="feature-title">Cliche Cafe</h1>
+                <p ref={slideText} className="feature-text"></p>
                 <NavLink to="/about"><Button className="slider-button">Learn more</Button></NavLink>
               </div>
-              <button onClick={goToNextSlide} className="slider__btn-right">
+              <button onClick={goToNextSlide} className="slider-button-right">
               <FontAwesomeIcon icon={faArrowRight} />
               </button>
             </div>

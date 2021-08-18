@@ -9,12 +9,12 @@ function Header() {
   return (
     <Navbar isOpen={isOpen} className="navbar navbar-expand-lg navbar-light" sticky="top">
       <Container>
-        <NavbarBrand><NavLink onClick={() => setIsOpen(false)} className="nav-link-logo" to="/home"><img src={logo} alt="logo" /></NavLink></NavbarBrand>
+        <NavbarBrand><NavLink onClick={() => setIsOpen(false)} className="nav-link-logo" to="/home"><img src={logo} alt="logo" width="286" height="56" /></NavLink></NavbarBrand>
         <NavbarToggler onClick={() => setIsOpen(isOpen ? false : "isOpen")} />
         <Collapse isOpen={isOpen} navbar>
           <Nav navbar className="justify-content-end mobile-link" style={{ width: "100%" }}>
             <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/home">Home</NavLink></NavItem>
-            <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/about">About</NavLink></NavItem>
+            <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/about">About Us</NavLink></NavItem>
             <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/menu">Menu</NavLink></NavItem>
             <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/reserve">Reserve</NavLink></NavItem>
           </Nav>
