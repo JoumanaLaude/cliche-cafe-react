@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Col, Row } from 'reactstrap';
-import { ItemName, ItemBox } from './menuStyle'
+import styled from 'styled-components';
 
 const Products = ({ data }) => {
     return (
@@ -24,5 +24,18 @@ const Products = ({ data }) => {
         </Container>
     )
 }
+
+export const ItemName = styled.h4`
+    font-family: Libre Baskerville, serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #55433B;
+`
+
+export const ItemBox = styled.div`
+    margin: auto;
+    width: 90%;
+    background: #fff1e3;
+`
 
 export default Products;
