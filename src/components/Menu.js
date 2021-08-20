@@ -3,6 +3,7 @@ import { Button, Row, Col, Container, Modal, ModalHeader, ModalBody, Form, FormG
 import Products from './/Menu/MenuItemComponent';
 import { cafeMenu } from './Menu/menuItems';
 import Counter from './Menu/Counter';
+import styled from 'styled-components';
 
 function MenuPage() {
    const [modal, setModal] = useState(false);
@@ -23,20 +24,24 @@ function MenuPage() {
                <Modal isOpen={modal} toggle={toggle} returnFocusAfterClose={false}>
                   <ModalHeader charCode="Close" toggle={toggle}>Order for Pickup</ModalHeader>
                   <ModalBody>
-                     <Row>
-                        <Form onSubmit={handleSubmit}>
-                           <FormGroup>
-                              <Label for="yourName">Your Name: </Label><Input type="name" name="name" id="yourName" placeholder="Your Name" required={true} />< br />
-                              <Label for="yourName">Phone (We will text you when order is ready): </Label><Input type="text" name="number" id="phoneNumber" placeholder="Phone Number" required={true} />< br />
-                              {cafeMenu.map((cafeMenu, index) => (
-                                 <div className="container" key={index}>
-                                    <img width="100" className="img-fluid p-2 rounded float-right pt-5 d-none d-md-block" src={cafeMenu.img} alt={cafeMenu.name} /> {cafeMenu.name} {cafeMenu.price} <Counter />
-                                 </div>
-                              ))}
-                              <p className="text-center"><Button className="order-button" type="submit">Submit Order for Pickup</Button></p>
-                           </FormGroup>
-                        </Form>
-                     </Row>
+                     <Form onSubmit={handleSubmit}>
+                        <FormGroup>
+                           <Label for="yourName">Your Name: </Label><Input type="name" name="name" id="yourName" placeholder="Your Name" required={true} />< br />
+                           <Label for="yourName">Phone (We will text you when order is ready): </Label><Input type="text" name="number" id="phoneNumber" placeholder="Phone Number" required={true} />< br />
+
+                           {cafeMenu.map((cafeMenu, index) => (
+                              <ItemBox key={index}>
+                                    <Row className="mt-3">
+                                       <Col><img width="100" className="img-fluid" src={cafeMenu.img} alt={cafeMenu.name} /></Col>
+                                       <Col>{cafeMenu.name} {cafeMenu.price}<br /><Counter /></Col>
+                                    </Row>
+                                 </ItemBox>
+                           ))}
+
+
+                           <p className="text-center"><Button className="order-button mt-4" type="submit">Submit Order for Pickup</Button></p>
+                        </FormGroup>
+                     </Form>
                   </ModalBody>
                </Modal>
             </Col>
@@ -47,5 +52,11 @@ function MenuPage() {
       </>
    );
 }
+
+export const ItemBox = styled.div`
+    margin: auto;
+    width: 90%;
+    background: #fff1e3;
+`
 
 export default MenuPage;

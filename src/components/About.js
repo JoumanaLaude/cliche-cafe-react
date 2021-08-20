@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Col, Row } from 'reactstrap';
-// import halohalo from '../assets/images/food/halo-halo.jpg';
-// import coffeemug from '../assets/images/pages/yellowmug-coffee-book.jpg';
 import { AboutUsContent } from '../constants/aboutConst';
 import TitleText from './TitleText';
 
