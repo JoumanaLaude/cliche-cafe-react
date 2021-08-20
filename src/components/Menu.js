@@ -30,7 +30,7 @@ function MenuPage() {
                               <Label for="yourName">Phone (We will text you when order is ready): </Label><Input type="text" name="number" id="phoneNumber" placeholder="Phone Number" required={true} />< br />
                               {cafeMenu.map((cafeMenu, index) => (
                                  <div className="container" key={index}>
-                                    <img width="100" className="img-fluid p-2" src={cafeMenu.img} alt={cafeMenu.name} /> {cafeMenu.name} {cafeMenu.price} <Counter />
+                                    <img width="100" className="img-fluid p-2 rounded float-right pt-5 d-none d-md-block" src={cafeMenu.img} alt={cafeMenu.name} /> {cafeMenu.name} {cafeMenu.price} <Counter />
                                  </div>
                               ))}
                               <p className="text-center"><Button className="order-button" type="submit">Submit Order for Pickup</Button></p>
