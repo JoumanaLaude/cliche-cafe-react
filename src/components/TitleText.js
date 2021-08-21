@@ -4,8 +4,8 @@ export default class TitleText extends Component {
    render() {
       return (
          <>
-            <h2>{this.props.titleText}</h2>
-            <p className="lead">{this.props.bodyText}</p>
+            <h2 className="pt-3">{this.props.title}</h2>
+            <p className="lead">{this.props.content}</p>
          </>
       )
    }

@@ -1,12 +1,10 @@
 import React from 'react';
-import Slider from "./Slider"
-import SliderInfo from "../constants/sliderInfo"
+import Slider from "./Slider/Slider"
+import SliderInfo from "./Slider/sliderInfo"
 import { Col, Row } from 'reactstrap';
-import { HomePageContent } from '../constants/homeConst';
-import macarons from '../assets/images/pages/bao-macarons.jpg';
-import outdoor from '../assets/images/pages/cafe-outside.jpg';
 import TitleText from './TitleText';
 import { NavLink } from 'react-router-dom';
+import { PageContent } from './PageContent'
 
 function Home() {
   return (
@@ -15,17 +13,17 @@ function Home() {
       <div className="container pt-4 px-5">
         <Row>
           <Col>
-            <TitleText titleText={HomePageContent.introParagraph.titleText} bodyText={HomePageContent.introParagraph.bodyText} />
+            <TitleText title={PageContent.homePage.title} content={PageContent.homePage.content} />
           </Col>
           <Col lg={5}>
-            <img src={macarons} width="600" height="300" className="img-fluid rounded float-right" alt="Bao themed macarons" />
+            <img src={PageContent.homePage.img} width="600" height="300" className="img-fluid rounded float-right" alt="Bao themed macarons" />
           </Col>
         </Row>
       </div>
       <div className="container pt-3 pb-3 px-5">
         <Row className="justify-content-md-center">
           <Col lg={9} className="d-none d-lg-block">
-            <TitleText titleText={HomePageContent.foodParagraph.titleText} bodyText={HomePageContent.foodParagraph.bodyText} />
+            <TitleText title={PageContent.foodSection.title} content={PageContent.foodSection.content} />
             <p className="text-left"><NavLink to="/menu">View Full Menu</NavLink></p>
           </Col>
         </Row>
@@ -33,10 +31,10 @@ function Home() {
       <div className="container px-5">
         <Row>
           <Col lg={5} className="d-none d-lg-block">
-            <img src={outdoor} width="600" height="300" className="img-fluid rounded" alt="The cafe outside" />
+            <img src={PageContent.loungeSection.img} width="600" height="300" className="img-fluid rounded" alt="The cafe outside" />
           </Col>
           <Col>
-            <TitleText titleText={HomePageContent.workspaceParagraph.titleText} bodyText={HomePageContent.workspaceParagraph.bodyText} />
+            <TitleText title={PageContent.loungeSection.title} content={PageContent.loungeSection.content} />
             <NavLink to="/reserve">Reserve Workspace</NavLink>
           </Col>
         </Row>

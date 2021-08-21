@@ -16,7 +16,6 @@ function Header() {
             <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/home">Home</NavLink></NavItem>
             <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/about">About Us</NavLink></NavItem>
             <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/menu">Menu</NavLink></NavItem>
-            <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/reserve">Reserve</NavLink></NavItem>
           </Nav>
         </Collapse>
       </Container>

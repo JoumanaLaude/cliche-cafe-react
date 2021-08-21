@@ -5,6 +5,12 @@
 ::selection {
   background: #ffe2ad; }
 
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .navbar {
   background-color: #ffe2ad;}
 
@@ -56,7 +62,13 @@ a:hover, a:focus, .fa:hover,
 .site-footer {
   background-color: #ffe2ad;
   padding: 20px 0; 
-  margin-top: 50px; }
+  margin-top: 50px;
+  flex-shrink: 0;
+}
+
+.page-body {
+  flex-grow: 1;
+}
 
 @media (min-width: 1200px) {
   .container {

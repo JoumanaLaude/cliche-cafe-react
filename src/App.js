@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <>
         <BrowserRouter>
-          <div>
+          <div className="wrapper">
             <Main />
           </div>
         </BrowserRouter>
