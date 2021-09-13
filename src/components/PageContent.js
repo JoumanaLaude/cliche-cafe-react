@@ -1,7 +1,7 @@
-import macarons from '../assets/images/pages/bao-macarons.png';
+import macarons from '../assets/images/pages/bao-macarons.jpg';
 import outdoor from '../assets/images/pages/cafe-outside.jpg';
 import halohalo from '../assets/images/pages/halo-halo.jpg';
-import coffeemug from '../assets/images/pages/yellowmug-coffee-book.png';
+import coffeemug from '../assets/images/pages/yellowmug-coffee-book.jpg';
 import verticalimg from '../assets/images/pages/vertical-cafe-outside.jpg';
 
 
