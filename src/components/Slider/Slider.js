@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import useSlider from './useSlider'
+import useSlider from './useSlider';
 import './slider.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 import { Button } from 'reactstrap';
 

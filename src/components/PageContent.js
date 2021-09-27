@@ -10,8 +10,7 @@ export const PageContent = {
    },
    foodSection: {
       title: "Cafe Food & Drink",
-      content: `Our menu consists of small bites, desserts, and drinks inspired from Asian
-      countries. We research and select special foods that fit with each season, and select those as the ingredients
+      content: `Our menu consists of small bites, desserts, and drinks. We research and select special foods that fit with each season, and select those as the ingredients
       of our cafe's creations. Each menu item has a story to tell and provides people with the opportunity to learn about
       where the food is from.`
    },

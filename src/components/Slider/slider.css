@@ -7,7 +7,7 @@ body {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   height: 100vh;
+   height: 90vh;
    width: 100%;
  }
  
@@ -15,7 +15,7 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 100vh;
+   height: 80vh;
  }
  
  .slider-feature {

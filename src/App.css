@@ -22,7 +22,7 @@
   font-size: 1.2rem;
   font-weight: 400;
   color: #55433B;
-  padding: 0px 15px;}
+  padding: 0px 1.6rem;}
 
 .nav-link-logo {
   padding: 0!important;
@@ -66,13 +66,14 @@ a:hover, a:focus, .fa:hover,
   flex-shrink: 0;
 }
 
+.section {
+  position: relative;
+  min-height: 100vh;
+}
+
 .page-body {
   flex-grow: 1;
 }
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1180; } }
 
 table {
   background-color: #FFECE3; }
@@ -126,8 +127,8 @@ table {
 @media screen and (max-width: 989px) {
   .navbar-light .navbar-nav .nav-link {
     font-family: "Libre Baskerville", serif;
-    font-size: 1.4rem;
-    padding: 8px;
+    font-size: 1.2rem;
+    padding: .8rem 0;
     text-align: center;
     }
 }
