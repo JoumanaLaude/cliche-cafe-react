@@ -19,15 +19,14 @@ function Footer() {
                      <a href="http://twitter.com/" aria-label="Twitter" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} className="fa-2x fa-fw icon-space" /></a>
                   </Col>
                   <Col className="pt-2 text-center">
-                     <p><Button onClick={toggle} className="footer-button">Hours & Location & Contact</Button><br />
-                     Cliche Cafe by Joumana Laude</p>
+                     <Button onClick={toggle} className="footer-button">Contact Us</Button>
                   </Col>
                </Row>
             </div>
          </footer>
 
          <Modal isOpen={modal} returnFocusAfterClose={false} toggle={toggle}>
-            <ModalHeader toggle={toggle}>Hours & Location & Contact</ModalHeader>
+            <ModalHeader toggle={toggle}>Contact Us</ModalHeader>
             <ModalBody>
                <Container className="text-center">
                   <p>Open every day: 9AM - 8PM</p>

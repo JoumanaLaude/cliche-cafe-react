@@ -1,9 +1,4 @@
-import macarons from '../assets/images/pages/bao-macarons.jpg';
-import outdoor from '../assets/images/pages/cafe-outside.jpg';
-import halohalo from '../assets/images/pages/halo-halo.jpg';
-import coffeemug from '../assets/images/pages/yellowmug-coffee-book.jpg';
 import verticalimg from '../assets/images/pages/vertical-cafe-outside.jpg';
-
 
 export const PageContent = {
    homePage: {
@@ -11,8 +6,7 @@ export const PageContent = {
       content: `Cliche Cafe is a cafe and lounge area where we provide people with a new experience for food,
       work, and relaxation. Our cafe side includes a seasonal rotating menu and bubble tea bar where people can
       enjoy the combination of boba flavors & alcohol. The cafe provides a space where people can
-      do work or just kick back and take a breather.`,
-      img: macarons
+      do work or just kick back and take a breather.`
    },
    foodSection: {
       title: "Cafe Food & Drink",
@@ -29,8 +23,7 @@ export const PageContent = {
       title: "Lounge & Workspace",
       content: `Cliche has seating for the cafe area, bar, and both indoor & outdoor tables with seating. We
       provide a community space for people to come in and work on their laptops with our outlets, read, or just
-      relax. Workspace areas are first-come, first-serve unless reserved ahead of time.`,
-      img: outdoor
+      relax. Workspace areas are first-come, first-serve unless reserved ahead of time.`
    },
    aboutUs: {
       title: "About Us",
@@ -39,7 +32,7 @@ export const PageContent = {
       drinks we have to offer.`,
       content2: `We have a seasonal rotating menu for food and drinks to keep things fresh and
       new. Menu items are all inspired by Asian cuisine to help people learn more about different food and cultures.`,
-      img: halohalo
+      // img: halohalo
    },
    eventSection: {
       title: "Cliche Events",
@@ -48,7 +41,7 @@ export const PageContent = {
       content2: `We do our best to support the local community by hosting live music performances by local
       musicians, showcasing art by locals, and we also have events with information and
       resources to help guide people to learn new skills.`,
-      img: coffeemug
+      // img: coffeemug
    },
    menuPage: {
       title: "Menu",

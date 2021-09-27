@@ -5,6 +5,8 @@ import { Col, Row } from 'reactstrap';
 import TitleText from './TitleText';
 import { NavLink } from 'react-router-dom';
 import { PageContent } from './PageContent'
+import macarons from '../assets/images/pages/bao-macarons.jpg';
+import outdoor from '../assets/images/pages/cafe-outside.jpg';
 
 function Home() {
   return (
@@ -16,7 +18,7 @@ function Home() {
             <TitleText title={PageContent.homePage.title} content={PageContent.homePage.content} />
           </Col>
           <Col lg={5}>
-            <img src={PageContent.homePage.img} width="600" height="300" className="img-fluid rounded float-right" alt="Bao themed macarons" />
+            <img src={macarons} width="600" height="300" className="img-fluid rounded float-right" alt="Bao themed macarons" />
           </Col>
         </Row>
       </div>
@@ -31,7 +33,7 @@ function Home() {
       <div className="container px-5">
         <Row>
           <Col lg={5} className="d-none d-lg-block">
-            <img src={PageContent.loungeSection.img} width="600" height="300" className="img-fluid rounded" alt="The cafe outside" />
+            <img src={outdoor} width="600" height="300" className="img-fluid rounded" alt="The cafe outside" />
           </Col>
           <Col>
             <TitleText title={PageContent.loungeSection.title} content={PageContent.loungeSection.content} />

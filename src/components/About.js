@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Col, Row } from 'reactstrap';
 import { PageContent } from './PageContent';
 import TitleText from './TitleText';
+import halohalo from '../assets/images/pages/halo-halo.jpg';
+import coffeemug from '../assets/images/pages/coffee.jpg';
 
 function About() {
    return (
@@ -13,7 +15,7 @@ function About() {
                   <TitleText content={PageContent.aboutUs.content2} />
                </Col>
                <Col>
-                  <img src={PageContent.aboutUs.img} width="600" height="300" className="img-fluid rounded float-right pt-5 d-none d-md-block" alt="Halo-halo dessert" />
+                  <img src={halohalo} width="600" height="300" className="img-fluid rounded float-right pt-5 d-none d-md-block" alt="Halo-halo dessert" />
                </Col>
             </Row>
          </Container>
@@ -21,7 +23,7 @@ function About() {
             <Row>
                <Col>
                   <TitleText title={PageContent.eventSection.title} content={PageContent.eventSection.content} />
-                  <img src={PageContent.eventSection.img} width="800" height="300" className="img-fluid rounded mx-auto d-block" alt="Coffee mug on book" />
+                  <img src={coffeemug} width="800" height="300" className="img-fluid rounded mx-auto d-block" alt="Coffee mug on book" />
                   <TitleText content={PageContent.eventSection.content2} />
                </Col>
             </Row>
