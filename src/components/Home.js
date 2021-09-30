@@ -3,7 +3,6 @@ import Slider from "./Slider/Slider";
 import SliderInfo from "./Slider/sliderInfo";
 import { Container, Col, Row } from 'reactstrap';
 import TitleText from './TitleText';
-import { NavLink } from 'react-router-dom';
 import { PageContent } from './PageContent';
 import macarons from '../assets/images/pages/bao-macarons.jpg';
 import outdoor from '../assets/images/pages/cafe-outside.jpg';
