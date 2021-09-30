@@ -7,7 +7,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Navbar isOpen={isOpen} className="navbar navbar-expand-lg navbar-light" sticky="top">
+    <Navbar isOpen={isOpen} className="navbar navbar-expand-lg navbar-light">
       <Container>
         <NavbarBrand><NavLink onClick={() => setIsOpen(false)} className="nav-link-logo" to="/home"><img src={logo} alt="logo" width="286" height="56" /></NavLink></NavbarBrand>
         <NavbarToggler onClick={() => setIsOpen(isOpen ? false : "isOpen")} />
