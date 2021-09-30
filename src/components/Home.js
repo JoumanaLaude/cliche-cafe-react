@@ -29,7 +29,7 @@ function Home() {
           </Col>
           <Col>
             <TitleText title={PageContent.loungeSection.title} content={PageContent.loungeSection.content} />
-            <NavLink to="/reserve">Reserve Workspace</NavLink>
+            {/* <NavLink to="/reserve">Reserve Workspace</NavLink> */}
           </Col>
         </Row>
       </Container>
