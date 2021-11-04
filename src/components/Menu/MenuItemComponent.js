@@ -5,17 +5,17 @@ import styled from 'styled-components';
 const Products = ({ data }) => {
     return (
         <Container>
-            {data.map((product, index) => {
+            {data.map(({img, name, desc, price, origin}, index) => {
                 return (
                     <ItemBox key={index}>
                         <Row className="mt-3 py-3">
                             <Col md={{ size: 5, offset: 1 }}>
-                                <img src={product.img} alt={product.name} width="230" height="160" />
+                                <img src={img} alt={name} width="230" height="160" />
                             </Col>
                             <Col md={{ size: 5 }}>
-                                <ItemName className="pt-3">{product.name}</ItemName>
-                                {product.desc} | {product.price}
-                                <i className="d-none d-md-block pt-2">{product.origin}</i>
+                                <ItemName className="pt-3">{name}</ItemName>
+                                {desc} | {price}
+                                <i className="d-none d-md-block pt-2">{origin}</i>
                             </Col>
                         </Row>
                     </ItemBox>

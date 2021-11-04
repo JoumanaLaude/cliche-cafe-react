@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 
 function About() {
    return (
-      <section className="section">
+      <main className="section">
          <Container className="pt-5 px-5">
             <Row>
                <Col lg={8} pr={1}>
@@ -37,7 +37,7 @@ function About() {
                </Col>
             </Row>
          </Container>
-      </section>
+      </main>
    );
 }
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Button } from 'reactstrap';
 
-function Counter() {
+export default function Counter() {
     const [counter, setCounter] = useState(() => { return 0 });
 
     function increment() {
@@ -34,5 +34,3 @@ export const CartButton = styled(Button)`
     background: #55433B;
     margin: .5em;
 `
-
-export default Counter;

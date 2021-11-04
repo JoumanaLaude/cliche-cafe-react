@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "./Slider/Slider";
-import SliderInfo from "./Slider/sliderInfo";
+import SliderInfo from "./Slider/SliderInfo";
 import { Container, Col, Row } from 'reactstrap';
 import TitleText from './TitleText';
 import { PageContent } from './PageContent';
@@ -9,7 +9,7 @@ import outdoor from '../assets/images/pages/cafe-outside.jpg';
 
 function Home() {
   return (
-    <section>
+    <main>
       <Slider images={SliderInfo}/>
       <Container className="pt-5 px-5">
         <Row>
@@ -32,10 +32,8 @@ function Home() {
           </Col>
         </Row>
       </Container>
-    </section>
-
+    </main>
   );
 }
-
 
 export default Home;

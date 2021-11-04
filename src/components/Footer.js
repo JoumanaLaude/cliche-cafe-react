@@ -8,23 +8,20 @@ function Footer() {
    const toggle = () => setModal(!modal);
 
    return (
-      <>
-         <footer className="site-footer">
-            <div className="container">
-               <Row>
-                  <Col lg={6} className="text-center mt-2">
-                     <a href="http://yelp.com/" aria-label="Yelp" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faYelp} className="fa-2x fa-fw icon-space" /></a>
-                     <a href="http://instagram.com/" aria-label="Instagram" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="fa-2x fa-fw icon-space" /></a>
-                     <a href="http://youtube.com/" aria-label="Youtube" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faYoutube} className="fa-2x fa-fw icon-space" /></a>
-                     <a href="http://twitter.com/" aria-label="Twitter" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} className="fa-2x fa-fw icon-space" /></a>
-                  </Col>
-                  <Col className="pt-2 text-center">
-                     <Button onClick={toggle} className="footer-button">Contact Us</Button>
-                  </Col>
-               </Row>
-            </div>
-         </footer>
-
+      <footer className="site-footer">
+         <Container>
+            <Row>
+               <Col lg={6} className="text-center mt-2">
+                  <a href="http://yelp.com/" aria-label="Yelp" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faYelp} className="fa-2x fa-fw icon-space" /></a>
+                  <a href="http://instagram.com/" aria-label="Instagram" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="fa-2x fa-fw icon-space" /></a>
+                  <a href="http://youtube.com/" aria-label="Youtube" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faYoutube} className="fa-2x fa-fw icon-space" /></a>
+                  <a href="http://twitter.com/" aria-label="Twitter" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} className="fa-2x fa-fw icon-space" /></a>
+               </Col>
+               <Col className="pt-2 text-center">
+                  <Button onClick={toggle} className="footer-button">Contact Us</Button>
+               </Col>
+            </Row>
+         </Container>
          <Modal isOpen={modal} returnFocusAfterClose={false} toggle={toggle}>
             <ModalHeader toggle={toggle}>Contact Us</ModalHeader>
             <ModalBody>
@@ -35,7 +32,7 @@ function Footer() {
                </Container>
             </ModalBody>
          </Modal>
-      </>
+      </footer>
    );
 }
 

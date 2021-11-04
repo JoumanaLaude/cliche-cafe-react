@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect } from 'react';
 
 const useSlider = (slideImage, slideText, images) => {
     let slideCounter = 0;
@@ -28,7 +28,7 @@ const useSlider = (slideImage, slideText, images) => {
         slideImage.current.classList.add('fadeIn');
         setTimeout(() => {
           slideImage.current.classList.remove('fadeIn');
-        }, 700);
+        }, 800);
     }
 
     const goToPreviousSlide = () => {

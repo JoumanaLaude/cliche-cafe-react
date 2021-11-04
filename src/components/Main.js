@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
@@ -7,29 +7,24 @@ import Menu from './Menu/Menu';
 import Reserve from './Reserve';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-class Main extends Component {
-
-   render() {
-      const HomePage = () => {
-         return (
-            <Home />
-         );
-      };
-
+export default function Main() {
+   const HomePage = () => {
       return (
-         <div>
-            <Header />
-            <Switch>
-               <Route path='/home' component={HomePage} />
-               <Route exact path='/about' component={About} />
-               <Route exact path='/menu' component={Menu} />
-               <Route exact path='/reserve' component={Reserve} />
-               <Redirect to='/home' />
-            </Switch>
-            <Footer />
-         </div>
+         <Home />
       );
-   }
-}
+   };
 
-export default Main;
+   return (
+      <div>
+         <Header />
+         <Switch>
+            <Route path='/home' component={HomePage} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/menu' component={Menu} />
+            <Route exact path='/reserve' component={Reserve} />
+            <Redirect to='/home' />
+         </Switch>
+         <Footer />
+      </div>
+   );
+}
