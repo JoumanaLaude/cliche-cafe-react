@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "./Slider/Slider";
-import SliderInfo from "./Slider/SliderInfo";
+import SliderInfo from "./Slider/sliderInfo";
 import { Container, Col, Row } from 'reactstrap';
 import TitleText from './TitleText';
 import { PageContent } from './PageContent';
