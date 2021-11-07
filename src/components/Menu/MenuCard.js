@@ -3,9 +3,10 @@ import { Container, Col, Row } from 'reactstrap';
 import styled from 'styled-components';
 
 const Products = ({ data }) => {
+    
     return (
         <Container>
-            {data.map(({img, name, desc, price, origin}, index) => {
+            {data.cafeMenu.map(({img, name, desc, price, origin}, index) => {
                 return (
                     <ItemBox key={index}>
                         <Row className="mt-3 py-3">
@@ -14,7 +15,7 @@ const Products = ({ data }) => {
                             </Col>
                             <Col md={{ size: 5 }}>
                                 <ItemName className="pt-3">{name}</ItemName>
-                                {desc} | {price}
+                                {desc} | ${price}
                                 <i className="d-none d-md-block pt-2">{origin}</i>
                             </Col>
                         </Row>
@@ -22,8 +23,8 @@ const Products = ({ data }) => {
                 )
             })}
         </Container>
-    )
-}
+    );
+};
 
 export const ItemName = styled.h4`
     font-family: Libre Baskerville, serif;
