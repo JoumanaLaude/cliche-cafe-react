@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Col, Row } from 'reactstrap';
 import styled from 'styled-components';
 
-const Products = ({ data }) => {
+const MainMenu = ({ data }) => {
     
     return (
         <Container>
@@ -39,4 +39,4 @@ export const ItemBox = styled.div`
     background: #fff1e3;
 `
 
-export default Products;
+export default MainMenu;

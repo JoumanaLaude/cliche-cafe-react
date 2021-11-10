@@ -24,7 +24,7 @@ export default function App() {
   return (
     <div>
       <BrowserRouter>
-      <Header />
+        <Header />
         <Switch>
           <Route path='/home' component={HomePage} />
           <Route exact path='/about' component={About} />
