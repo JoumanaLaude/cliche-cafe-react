@@ -21,14 +21,6 @@ const useSlider = (slideImage, slideText, images) => {
             rgba(68, 68, 68, 0.4)
           ), url(${images[slide - 1].src})`;
           slideText.current.innerHTML = images[slide - 1].text;
-         animateSlide(slideImage)
-    }
-
-    const animateSlide = () => {
-        slideImage.current.classList.add('fadeIn');
-        setTimeout(() => {
-          slideImage.current.classList.remove('fadeIn');
-        }, 800);
     }
 
     const goToPreviousSlide = () => {
@@ -45,7 +37,6 @@ const useSlider = (slideImage, slideText, images) => {
       if (slideCounter === images.length - 1) {
         startSlider()
         slideCounter = -1;
-        animateSlide(slideImage)
       }
 
       slideImage.current.style.backgroundImage = `linear-gradient(
@@ -55,7 +46,6 @@ const useSlider = (slideImage, slideText, images) => {
           ),url(${images[slideCounter + 1].src})`;
       slideText.current.innerHTML = images[slideCounter + 1].text;
       slideCounter++;
-      animateSlide(slideImage)
     }
 
     return { goToPreviousSlide, goToNextSlide }
