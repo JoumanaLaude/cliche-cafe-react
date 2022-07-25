@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-// import Main from './components/Main';
+import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -10,30 +9,27 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
 
 export default function App() {
-
-  useEffect(() => {
-    document.title = "Cliche Cafe";
-  }, []);
-
   const HomePage = () => {
     return (
-      <Home />
+      <main>
+        <Home />
+      </main>
     );
   };
 
   return (
-    <div>
+    <nav className="d-flex flex-column min-vh-100">
       <BrowserRouter>
         <Header />
         <Switch>
           <Route path='/home' component={HomePage} />
-          <Route exact path='/about' component={About} />
           <Route exact path='/menu' component={Menu} />
+          <Route exact path='/about' component={About} />
           <Route exact path='/reserve' component={Reserve} />
           <Redirect to='/home' />
         </Switch>
         <Footer />
       </BrowserRouter>
-    </div>
+    </nav>
   );
 }

@@ -14,8 +14,9 @@ function Header() {
           <Collapse isOpen={isOpen} navbar>
             <Nav navbar className="justify-content-end mobile-link" style={{ width: "100%" }}>
               <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/home">Home</NavLink></NavItem>
-              <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/about">About Us</NavLink></NavItem>
               <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/menu">Menu</NavLink></NavItem>
+              <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/about">About Us</NavLink></NavItem>
+              <NavItem><NavLink onClick={() => setIsOpen(false)} className="nav-link" to="/reserve">Reserve</NavLink></NavItem>
             </Nav>
           </Collapse>
         </Container>

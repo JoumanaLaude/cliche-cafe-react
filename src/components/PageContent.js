@@ -2,21 +2,11 @@ import verticalimg from '../assets/images/pages/vertical-cafe-outside.jpg';
 
 export const PageContent = {
    homePage: {
-      title: "Hello!",
+      title: "Cafe, bar, and lounge.",
       content: `Cliche Cafe is a cafe and lounge area where we provide people with a new experience for food,
       work, and relaxation. Our cafe side includes a seasonal rotating menu and bubble tea bar where people can
       enjoy the combination of boba flavors & alcohol. The cafe provides a space where people can
       do work or just kick back and take a breather.`
-   },
-   foodSection: {
-      title: "Cafe Food & Drink",
-      content: `Our menu consists of small bites, desserts, and drinks. We research and select special foods that fit with each season, and select those as the ingredients
-      of our cafe's creations. Each menu item has a story to tell and provides people with the opportunity to learn about
-      where the food is from.`
-   },
-   menuSection: {
-      title: "Seasonal Menu",
-      content: `We serve a different menu each season. We're currently serving our spring season menu.`
    },
    loungeSection: {
       title: "Lounge & Workspace",
@@ -45,6 +35,11 @@ export const PageContent = {
    menuPage: {
       title: "Menu",
       content: `Cliche Cafe is currently serving our spring season menu.`
+   },
+   aboutMenu: {
+      content: `Our menu consists of small bites, desserts, and drinks. We research and select special foods that fit with each season, and select those as the ingredients
+      of our cafe's creations. Each menu item has a story to tell and provides people with the opportunity to learn about
+      where the food is from.`
    },
    reserveSpace: {
       title: "Reserve Space",

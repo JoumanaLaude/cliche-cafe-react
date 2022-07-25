@@ -32,26 +32,25 @@ body {
   padding: 0!important;
 }
 
+h1, h2, h3 {
+  color: #55433B;
+}
+
 h1 {
   font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-  color: #ffe2ad;
-  text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.438);
+  font-size: 4rem;
+  margin-bottom: 0;
 }
 
 h2 {
   font-family: "Libre Baskerville", serif;
-  font-size: 2.4rem;
-  color: #55433B;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  font-size: 1.6rem;
 }
 
 h3 {
   font-family: "Libre Baskerville", serif;
   font-size: 1.4rem;
   font-weight: 300;
-  color: #55433B;
-  text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.5);
 }
 
 a {
@@ -69,14 +68,25 @@ a:hover, a:focus, .fa:hover,
 
 .site-footer {
   background-color: #ffe2ad;
-  padding: 20px 0; 
-  margin-top: 50px;
+  padding: 20px 0;
   flex-shrink: 0;
 }
 
 .section {
   position: relative;
   min-height: 100vh;
+}
+
+.col-margin {
+  margin-bottom: 50px;
+}
+
+.home-height {
+  margin-top: 10%;
+}
+
+.bao-img {
+  margin-top: 20px;
 }
 
 .page-body {

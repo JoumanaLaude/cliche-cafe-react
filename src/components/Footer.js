@@ -8,7 +8,7 @@ function Footer() {
    const toggle = () => setModal(!modal);
 
    return (
-      <footer className="site-footer">
+      <footer className="site-footer mt-auto">
          <Container>
             <Row>
                <Col lg={6} className="text-center mt-2">
