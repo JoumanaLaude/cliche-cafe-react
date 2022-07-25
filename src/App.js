@@ -22,11 +22,11 @@ export default function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path='/home' component={HomePage} />
+          <Route exact path='/' component={HomePage} />
           <Route exact path='/menu' component={Menu} />
           <Route exact path='/about' component={About} />
           <Route exact path='/reserve' component={Reserve} />
-          <Redirect to='/home' />
+          <Redirect to='/' />
         </Switch>
         <Footer />
       </BrowserRouter>

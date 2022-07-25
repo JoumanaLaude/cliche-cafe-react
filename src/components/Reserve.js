@@ -30,6 +30,30 @@ const Reserve = () => {
                                 <Label for="yourName">Your Name: </Label><Input type="name" name="name" id="yourName" placeholder="Your Name" required={true} />< br />
                                 <Label for="yourName">Phone (We will text you when order is ready): </Label><Input type="text" name="number" id="phoneNumber" placeholder="Phone Number" required={true} />< br />
                             </FormGroup>
+                            <FormGroup>
+                                <Label for="partySize">Select</Label>
+                                <Input type="select" name="party" id="partySize">
+                                    <option>1 person</option>
+                                    <option>2 people</option>
+                                    <option>3 people</option>
+                                    <option>4 people</option>
+                                </Input>
+                            </FormGroup>
+                            <FormGroup tag="fieldset">
+                                <legend>Reservation type:</legend>
+                                <FormGroup check>
+                                    <Label check>
+                                        <Input type="radio" name="radio1" />{' '}
+                                        Cafe Table
+                                    </Label>
+                                </FormGroup>
+                                <FormGroup check>
+                                    <Label check>
+                                        <Input type="radio" name="radio1" />{' '}
+                                        Lounge Area
+                                    </Label>
+                                </FormGroup>
+                            </FormGroup>
                         </Form>
                     </Col>
                     <Col>
