@@ -8,7 +8,7 @@ function Home() {
   return (
       <Container className="pt-5 px-5">
         <Row className="home-height col-margin">
-          <Col lg={4} xs={12} className="mb-4">
+          <Col lg={6} xs={12} className="mb-4">
             <img src={macarons} width="600" height="300" className="img-fluid rounded bao-img" alt="Bao themed macarons" />
           </Col>
           <Col>

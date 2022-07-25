@@ -10,6 +10,9 @@
 body {
   background: #FFECE3;
   color: #55433B;
+  font-size: 1rem;
+  font-family: "Libre Baskerville", serif;
+  line-height: 2rem;
 }
 
 .navbar {
@@ -39,12 +42,14 @@ h1, h2, h3 {
 h1 {
   font-family: "Libre Baskerville", serif;
   font-size: 4rem;
-  margin-bottom: 0;
+  margin-top: 30px;
 }
 
 h2 {
   font-family: "Libre Baskerville", serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  font-weight: 700;
 }
 
 h3 {
@@ -77,16 +82,25 @@ a:hover, a:focus, .fa:hover,
   min-height: 100vh;
 }
 
+.form-group {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
 .col-margin {
   margin-bottom: 50px;
 }
 
 .home-height {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .bao-img {
   margin-top: 20px;
+}
+
+.rsv-img {
+  margin-top: 6rem;
 }
 
 .page-body {
@@ -107,8 +121,7 @@ table {
 }
 
 .reserve-btn:hover {
-  background-color: #ffe2ad;
-  color: #B0765E;
+  color: #ffe2ad;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
