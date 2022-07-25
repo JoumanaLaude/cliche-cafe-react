@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Row, Col, Form, FormGroup, Label, Input } from "reactstrap";
+import { Breadcrumb, BreadcrumbItem, Button, Container, Row, Col, Form, FormGroup, Label, Input } from "reactstrap";
 import TitleText from './TitleText';
 import { PageContent } from './PageContent'
 import outdoor from '../assets/images/pages/cafe-outside.jpg';
@@ -14,6 +14,20 @@ const Reserve = () => {
     return (
         <>
             <Container className="text-center pt-4 px-5">
+            <Breadcrumb listTag="div">
+               <BreadcrumbItem
+                  href="/"
+                  tag="a"
+               >
+                  Home
+               </BreadcrumbItem>
+               <BreadcrumbItem
+                  active
+                  tag="span"
+               >
+                  Reserve
+               </BreadcrumbItem>
+            </Breadcrumb>
                 <Row>
                     <Col>
                         <TitleText title={PageContent.loungeSection.title} content={PageContent.loungeSection.content} />

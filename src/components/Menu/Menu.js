@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Col, Container, Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Button, Col, Container, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import MainMenu from './MenuCard';
 import data from './data';
 import { PageContent } from '../PageContent';
@@ -15,6 +15,20 @@ const MenuPage = () => {
       <>
          <CartProvider>
             <Container className="text-center pt-3 col-margin">
+            <Breadcrumb listTag="div">
+               <BreadcrumbItem
+                  href="/"
+                  tag="a"
+               >
+                  Home
+               </BreadcrumbItem>
+               <BreadcrumbItem
+                  active
+                  tag="span"
+               >
+                  Menu
+               </BreadcrumbItem>
+            </Breadcrumb>
                <Col>
                   <TitleText title={PageContent.menuPage.title} content={PageContent.menuPage.content} />
                   <TitleText content={PageContent.aboutMenu.content} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col, Row } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Container, Col, Row } from 'reactstrap';
 import { PageContent } from './PageContent';
 import TitleText from './TitleText';
 import halohalo from '../assets/images/pages/halo-halo.jpg';
@@ -9,6 +9,20 @@ function About() {
    return (
       <main className="section">
          <Container className="pt-5 px-5">
+            <Breadcrumb listTag="div">
+               <BreadcrumbItem
+                  href="/"
+                  tag="a"
+               >
+                  Home
+               </BreadcrumbItem>
+               <BreadcrumbItem
+                  active
+                  tag="span"
+               >
+                  About Us
+               </BreadcrumbItem>
+            </Breadcrumb>
             <Row>
                <Col lg={8} pr={1}>
                   <TitleText title={PageContent.aboutUs.title} content={PageContent.aboutUs.content} />
